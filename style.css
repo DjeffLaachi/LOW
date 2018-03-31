@@ -1,6 +1,7 @@
 
 
 
+
 body{
     
     font-family: "Cairo-Regular";
@@ -20,8 +21,17 @@ body{
     -ms-transform: scale(1.2); /* IE 9 */
     -webkit-transform: scale(1.2); /* Safari 3-8 */
     transform: scale(1.1); 
-}
-.lowContact {
+/* 
+* {
+  box-sizing: border-box;
+}  */
+/* logo class, mobile center styling*/
+/* .lowLogo {
+  text-align: center;
+  margin: 25px auto;
+
+}  */
+.lowLogo > figure > img{
   width: 50%;
   margin-left: 40%;
   margin-top: 8%;
@@ -40,6 +50,48 @@ z-index: 1000;
 .nav_style {
   background-color: #fa641c;
   color : #fff;
+}
+/*center contact detials */
+.lowContact {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* to control contact color*/
+.lowContact > li > a{
+  color: #fa641c;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.lowContact > li > a:hover {
+  color: #b14410;
+  cursor: pointer;
+  text-decoration: none;
+}
+.navbar_style {
+  background-color: #fa641c;
+}
+.navbar_style > a {
+  color : #fff !important;
+  margin: auto 8px;
+  font-size: 14px;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  height: 65px;
+  font-weight: bold;
+}
+.navbar_style > button {
+  width: 35px;
+  height: 30px;
+  border: none;
+}
+.navbar_style > button > span {
+  background: #fff !important;
+  margin-bottom: 6px;
+  border-radius: 4px;
+
 }
 .nav-in{
     
