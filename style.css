@@ -1,20 +1,82 @@
-.lowLogo {
-  display: block;
-  text-align: center;
-  width: 100%;
-  margin: 20px auto;
+
+
+
+body{
+    
+    font-family: "Cairo-Regular";
+}
+
+* {
+    box-sizing: border-box;
+}
+.header-in{
+    margin-top: 10px auto;
+}
+.logo{
+    position: relative;
+    margin-top: 1%;
+}
+.logo:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.1); 
 }
 .lowContact {
   width: 50%;
-  margin: 0 auto 12px;
+  margin-left: 40%;
+  margin-top: 8%;
+  position: relative;
 }
+
 .lowContact > li > a{
-  color: orange;
+  color: #fa641c;
+  font-size: 25px;
+ font-family: "Cairo-Regular"
+    
 }
 .lowContact > li > a:hover {
-
+z-index: 1000;
 }
 .nav_style {
-  background-color: orange;
+  background-color: #fa641c;
   color : #fff;
 }
+.nav-in{
+    
+background-color: #fa641c;  
+color: white;
+
+}
+
+
+nav .nav-in {
+    display: block;
+    padding: 0 0;
+    float: none;
+    background-color: white;
+}
+header .header-in .logo a img {
+    display: block;
+    
+}
+fieldset, img {
+    border: 0;
+    margin-bottom: 20px;
+   margin-left: 40px;
+}
+
+ nav .nav-in .nav-right ul li ul li a {
+                display: block;
+                padding: 7px 0 11px 41px;
+                font-family: "Cairo-Regular";
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 14px;
+                color: #000;
+                text-transform: uppercase;
+                position: relative; }
+
+
+
+
+
