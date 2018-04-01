@@ -2,183 +2,172 @@
 <html lang="en">
 
 <head>
-  <title>nav bar</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <link rel="stylesheet" type="text/css" href="css/fontawesome.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+<title>nav bar</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="css/fontawesome.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
 </head>
 
 <body>
- 
-    <div class="container">
-      <div class="row">
-        <div class="header-in col-xs-12 clearfix">
+<!-- start header of logo and contact -->
+<div class="container headerLogo_wrapper">
+  <div class="row">
+    <div class="header-in clearfix">
+      <div class="logo pull-leftcenter-block lowLogo">
+        <figure>
+          <img src="img/logolow.png" alt="logo">
+          <a href="https://low.ie/"></a>
+        </figure>
+      </div>
+    <div class="contact lowContact">
+      <ul class="list-inline text-center">
+      <li><a  href="tel:019017760" onclick="goog_report_conversion('tel:01-9017760')">
+        <img src="img/phone-icon.png" width="20" height="20" floar-left alt="img">
+        01-9017760</a>
+      </li>
+      <li><a href="" onclick="Intercom('show'); return false;">
+        <img src="img/chat-icon.png" width="20" height="20" floar-left alt="img">
+         LIVE CHAT</a>
+      </li>
+      </ul>
+    <div class="clearfix"></div>
+    </div>
+  </div>
+ </div>
+</div>
+<!-- End header of logo and contact -->
 
-           <div class="logo pull-left col-xs-12 center-block lowLogo">
-              <figure>
-                <img src="img/logolow.png" alt="logo">
-                <a href="https://low.ie/"></a>
-              </figure>
-           </div>
-           <div class="contact">
-               <ul class="list-inline col-xs-12 center-block lowContact">
-                   <li><a class="bg1" href="tel:019017760" onclick="goog_report_conversion('tel:01-9017760')">01-9017760</a>
-                   </li>
-                   <li class="last"><a href="" onclick="Intercom('show'); return false;" class="bg2"><img src="img/chat-icon.png" width="25" height="24" floar-left alt="img"> LIVE CHAT</a>
-                   </li>
-               </ul>
-               <div class="clearfix"></div>
-           </div>
-            
+<div class="bar_wrapper">
+  <nav class="navbar navbar-inverse navbar_style">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- burger menu bar icon -->
+        <button type="button" class="navbar-toggle burger_menu" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- end of burger menu bar icon -->
+
+        <!-- Start nav get a quote style -->
+        <div>
+            <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              <a class="navbar-brand get_color" href="#">GET A QUOTE</a>
+            </button>
+            <div class="collapse getAQuote_dropdown" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item col-xs-6 col-sm-4">
+                  <figure class="pull-left">
+                    <img src="img/mega-menu-icon1.png"  width="47" height="41" alt="mortgage img">
+                  </figure>
+                  <h6>MORTGAGE <br> PROTECTION</h6>
+                  <a href="#">GET A QUOTE</a>
+                </li>
+                <li class="nav-item col-xs-6 col-sm-4">
+                  <figure class="pull-left">
+                    <img src="img/mega-menu-icon2.png" width="47" height="41" alt="Life img">
+                  </figure>
+                  <h6>LIFE <br> INSURANCE</h6>
+                  <a href="#">GET A QUOTE</a>
+                </li>
+                <li class="nav-item col-xs-6 col-sm-4">
+                  <figure class="pull-left">
+                    <img src="img/mega-menu-icon3.png" width="47" height="41" alt="img">
+                  </figure>
+                  <h6>SERIOUS ILLNESS <br> COVER</h6>
+                  <a href="#">GET A QUOTE</a>
+                </li>
+                <li class="nav-item col-xs-6 col-sm-4">
+                  <figure class="pull-left">
+                    <img src="img/mega-menu-icon4.png" width="47" height="41" alt="img">
+                  </figure>
+                  <h6>INCOME <br> PROTECTION</h6>
+                  <a href="#">GET A QUOTE</a>
+                </li>
+            </div>
+          </ul>
         </div>
+        <!-- end nav get a quote style -->
+      </div>
+      <!-- Start nav burger menu style -->
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+               PRODUCTS <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#" class="bg1"><img src="img/mega-menu-icon1.png" width="25" height="24" floar-left alt="img">
+                     MORTGAGE <br> PROTECTION</a>
+                   </li>
+                <li>
+                  <a href="#" class="bg2"><img src="img/mega-menu-icon2.png" width="25" height="24" floar-left alt="img">
+                     LIFE <br> INSURANCE</a>
+                   </li>
+                <li>
+                  <a href="#" class="bg3"><img src="img/mega-menu-icon3.png" width="25" height="24" floar-left alt="img">
+                     SERIOUS <br> ILLNESS COVER</a>
+                   </li>
+                <li>
+                  <a href="#" class="bg4"><img src="img/mega-menu-icon4.png" width="25" height="24" floar-left alt="img">
+                     INCOME <br> PROTECTION</a>
+                   </li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"> ABOUT US <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="#" class="bg1">
+                          <img src="img/icon-4.png" width="25" height="24" floar-left alt="img">
+                           MEET THE TEAM</a>
+                      </li>
+                      <li>
+                        <a href="#" class="bg2">
+                          <img src="img/icon-5.png" width="25" height="24" floar-left alt="img">
+                           TESTIMONIALS</a>
+                      </li>
+                      <li>
+                        <a href="#" class="bg3"><img src="img/icon3.png" width="25" height="24" floar-left alt="img">
+                           INSURANCE BLOG</a>
+                      </li>
+                      <li>
+                        <a href="#" class="bg4"><img src="img/icon-6.png" width="25" height="24" floar-left alt="img">
+                           COMPANY</a>
+                     </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle float-left" data-toggle="dropdown" href="#"> CONTACT US <span class="caret"></span></a>
+                    <ul class="dropdown-menu float-left">
+                      <li>
+                        <a href="#" onclick="Intercom('show'); return false;" class="bg1"><img src="img/icon1.png" width="25" height="24" floar-left alt="img">
+                           LIVE CHAT</a>
+                      </li>
+                      <li>
+                        <a href="#" class="bg2"><img src="img/icon2.png" width="30" height="28" floar-left alt="img">
+                           REQUEST CALL BACK</a>
+                      </li>
+                      <li>
+                        <a href="#" class="bg3"><img src="img/icon3.png" width="30" height="28" floar-left alt="img">
+                           CONTACT DETAILS</a>
+                     </li>
+                    </ul>
+                </li>
+        </ul>
       </div>
     </div>
-  
-  
-<!-- start jeff's -->
-
-
-   
-<nav class="nav-in col-ms-12 clearfix">       
-    
-                 
-         <div class="nav-left pull-left">
-                     
-                <ul id="menu-header">
-                          
-                            <li>
-                                <a class="dropdown-toggle float-right" data-toggle="dropdown" href="#"> GET A QUOTE</a>
-                          
-                          
-                               <ul style="display: block;">
-                                   
-                                    <div class="mega-menu dropdown"> 
-                                        
-                                      <li class="mega-menu-in dropdown">
-                                        	<div class="mega-menu-left pull-left">
-                                            	<figure><img src="img/mega-menu-icon1.png" width="47" height="41" alt="img"></figure>
-                                            </div>
-                                            <div class="mega-menu-right pull-right">
-                                            	<h5>MORTGAGE <br>PROTECTION</h5>
-                                                <a href="#">GET A QUOTE</a>
-                                            </div>
-                                            <div class="clearfix"></div>
-                            
-                                      </li>
-                                        
-                                      <li class="mega-menu-in dropdown">
-                                        	<div class="mega-menu-left pull-left">
-                                            	<figure><img src="img/mega-menu-icon2.png" width="47" height="41" alt="img"></figure>
-                                            </div>
-                                            <div class="mega-menu-right pull-right">
-                                            	<h5>LIFE <br> INSURANCE</h5>
-                                                <a href="#">GET A QUOTE</a>
-                                            </div>
-                                            <div class="clearfix"></div>
-                            
-                                      </li>
-                                        
-                                      <li class="mega-menu-in dropdown">
-                                        	<div class="mega-menu-left pull-left">
-                                            	<figure><img src="img/mega-menu-icon3.png" width="47" height="41" alt="img"></figure>
-                                            </div>
-                                            <div class="mega-menu-right pull-right">
-                                            	<h5>SERIOUS ILLNESS <br> COVER</h5>
-                                                <a href="#">GET A QUOTE</a>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                      </li>
-                                        
-                                      <li class="mega-menu-in dropdown">
-                                        	<div class="mega-menu-left pull-left">
-                                            	<figure><img src="img/mega-menu-icon4.png" width="47" height="41" alt="img"></figure>
-                                            </div>
-                                            <div class="mega-menu-right pull-right">
-                                            	<h5>INCOME <br> PROTECTION</h5>
-                                                <a href="#">GET A QUOTE</a>
-                                            </div>
-                                            <div class="clearfix"></div>
-                                      </li>
-                                    
-                                   </div>
-                             </ul>   
-                        </li>
-                      </ul>
-                    
-                 </div>
-                
-          
-          
-               		
-     
-     <div class="collapse navbar-collapse pull-right" id="mynavbar">
-<!-- main -->
- <nav class="navbar navbar-default nav_style">
-   <div class="container-fluid">
-     <div class="navbar-header navbar_style">
-       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-         <span class="icon-bar burgerMenu"></span>
-         <span class="icon-bar burgerMenu"></span>
-         <span class="icon-bar burgerMenu"></span>
-       </button>
-       <a class="navbar-brand" href="#">get a quote</a>
-     </div>
-     <div class="collapse navbar-collapse" id="myNavbar">
-<!--       end jeff's  -->
-<!-- man end -->
-
-                 <ul class="nav navbar-nav navbar-right">
-
-                       <li><a href="#" class="no-bg float-left">HOME</a></li>
-                       <li class="dropdown float">
-                         <a class="dropdown-toggle float-right" data-toggle="dropdown" href="#"> PRODUCTS <span class="caret"></span></a>
-                         	<ul class="dropdown-menu">
-                             	<li><a href="#" class="bg1"><img src="img/mega-menu-icon1.png" width="25" height="24" floar-left alt="img"> MORTGAGE <br> PROTECTION</a></li>
-                                
-                                <li><a href="#" class="bg2"><img src="img/mega-menu-icon2.png" width="25" height="24" floar-left alt="img"> LIFE <br> INSURANCE</a></li>
-                                
-                                 <li><a href="#" class="bg3"><img src="img/mega-menu-icon3.png" width="25" height="24" floar-left alt="img"> SERIOUS <br> ILLNESS COVER</a></li>
-                                 <li><a href="#" class="bg4"><img src="img/mega-menu-icon4.png" width="25" height="24" floar-left alt="img"> INCOME <br> PROTECTION</a></li>
-                             </ul>
-                         </li>
-                     
-                        <li class="dropdown">
-                         <a class="dropdown-toggle float-right" data-toggle="dropdown" href="#"> ABOUT US <span class="caret"></span></a>
-                         	<ul class="dropdown-menu">
-                             	<li><a href="#" class="bg1"><img src="img/icon-4.png" width="25" height="24" floar-left alt="img"> MEET THE TEAM</a></li>
-                                 <li><a href="#" class="bg2"><img src="img/icon-5.png" width="25" height="24" floar-left alt="img"> TESTIMONIALS</a></li>
-                                 <li><a href="#" class="bg3"><img src="img/icon3.png" width="25" height="24" floar-left alt="img"> INSURANCE BLOG</a></li>
-                                 <li><a href="#" class="bg4"><img src="img/icon-6.png" width="25" height="24" floar-left alt="img"> COMPANY</a></li>
-                             </ul>
-                         </li>
-
-                         <li class="dropdown">
-                         <a class="dropdown-toggle float-left" data-toggle="dropdown" href="#"> CONTACT US <span class="caret"></span></a>
-                         	<ul class="dropdown-menu float-left">
-                                 <li><a href="#" onclick="Intercom('show'); return false;" class="bg1"><img src="img/icon1.png" width="25" height="24" floar-left alt="img"> LIVE CHAT</a></li>
-                                 <li><a href="#" class="bg2"><img src="img/icon2.png" width="30" height="28" floar-left alt="img"> REQUEST CALL BACK</a></li>
-                                 <li><a href="#" class="bg3"><img src="img/icon3.png" width="30" height="28" floar-left alt="img"> CONTACT DETAILS</a></li>
-                             </ul>
-                         </li>
-             </ul>
-             </div>
-
-             <div class="clearfix"></div>
-
-      
-    
- 
- </nav>
-
-  
-
+    </div>
+  </nav>
+</div>
 </body>
-
 </html>
